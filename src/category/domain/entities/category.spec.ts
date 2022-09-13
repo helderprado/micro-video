@@ -13,6 +13,7 @@ describe("Category tests", () => {
 
         const category = new Category(props);
 
+
         expect(category.props).toStrictEqual({
             name: "Movie",
             description: "description movie",

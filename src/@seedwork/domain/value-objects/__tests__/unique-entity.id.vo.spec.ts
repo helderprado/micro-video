@@ -1,6 +1,6 @@
 import { validate as uuidValidate } from "uuid";
-import InvalidUuidError from "../errors/invalide-uuid.error"
-import UniqueEntityId from "./unique-entity-id.vo"
+import InvalidUuidError from "../../../errors/invalide-uuid.error"
+import UniqueEntityId from "../unique-entity-id.vo"
 
 describe("UniqueEntityId unit test", () => {
 
@@ -21,7 +21,7 @@ describe("UniqueEntityId unit test", () => {
 
     it("should create and validate a new ID ", () => {
         const vo = new UniqueEntityId()
-        expect(uuidValidate(vo.id)).toBeTruthy()
+        expect(uuidValidate(vo.value)).toBeTruthy()
         expect(validateSpy).toHaveBeenCalled();
     })
 })
