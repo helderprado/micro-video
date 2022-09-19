@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/uuid": "^8.3.4",
+    "class-validator": "^0.13.2",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
